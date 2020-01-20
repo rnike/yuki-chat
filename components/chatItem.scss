@@ -1,0 +1,46 @@
+.chatItem {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  .text{ 
+      text-align: start;
+      padding: 5px;
+      word-wrap: break-word;
+  }
+  .time {
+    font-size: 10px;
+    color: #c5c5c5; 
+  }
+  &.SERVER {
+    color: #a5a5a5; 
+    align-self: center;
+    .text{ 
+        text-align: center;
+    }
+    .time {
+      visibility: hidden;
+    }
+  }
+  &.ME {
+    color: black;
+    align-self: flex-end;
+    .time {
+      text-align: end;
+    }
+  }
+  &.ELSE {
+    color: black;
+    align-self: flex-start;
+    .time {
+      text-align: start;
+    }
+  } 
+  &.ME,&.ELSE{ 
+  .text{ 
+    text-align: start;
+    background: #f4f4f4;
+    border-radius: 5px;
+    padding: 10px;
+}
+  }
+}
