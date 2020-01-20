@@ -1,5 +1,4 @@
 # Yuki
-----
 Random chat service based on Node.js.
 Made with NEXT.js and an Express server.
 
